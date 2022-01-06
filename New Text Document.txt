@@ -1,0 +1,2 @@
+MONGO_URI=mongodb+srv://admin:3F6VNMVRoBDN50Kt@cluster0.zib30.mongodb.net
+PORT=4000
