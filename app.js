@@ -14,6 +14,7 @@ var blockIndexRouter = require("./routes/block/index");
 var locationIndexRouter = require("./routes/location/index");
 var taskLogIndexRouter = require("./routes/taskLog/index");
 var reportIndexRouter = require("./routes/report/index");
+var feedIndexRouter = require("./routes/feed");
 
 var app = express();
 
@@ -38,6 +39,7 @@ app.use("/block", auth, blockIndexRouter);
 app.use("/location", auth, locationIndexRouter);
 app.use("/tasklog", auth, taskLogIndexRouter);
 app.use("/report", auth, reportIndexRouter);
+app.use("/feed", auth, feedIndexRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
